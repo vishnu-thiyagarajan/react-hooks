@@ -5,6 +5,8 @@ import MouseContainer from './components/MouseContainer'
 import PreviousState from './components/PreviousState'
 import Demo from './components/Demo'
 import GrandParent from './components/GrandParent'
+import CounterOne from './components/CounterOne'
+import CounterTwo from './components/CounterTwo'
 
 export const UserContext = React.createContext()
 export const ChannelContext = React.createContext()
@@ -19,7 +21,9 @@ function App () {
         <ChannelContext.Provider value='channel value'>
           <GrandParent />
         </ChannelContext.Provider>
-      </UserContext.Provider>
+      </UserContext.Provider><br />
+      <CounterOne /><br />
+      <CounterTwo />
     </div>
   )
 }
